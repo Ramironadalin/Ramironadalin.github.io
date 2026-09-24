@@ -9,11 +9,11 @@
   <!-- ========================================================================= -->
   <title>Ramiro Gastón Nadalin | Software Developer & Systems Builder</title>
   <meta name="title" content="Ramiro Gastón Nadalin | Software Developer & Systems Builder">
-  <meta name="description" content="Portfolio de Ramiro Gastón Nadalin — Desarrollador de Software especializado en Next.js, React, TypeScript y análisis de código. Demos interactivas en vivo de proyectos como Cartógrafo.">
-  <meta name="keywords" content="Ramiro Gastón Nadalin, Ramiro Nadalin, Software Developer, Fullstack Developer, Next.js, React, TypeScript, Cartografo, Portfolio IT, Frontend Developer, Bento Grid, Glassmorphism, Live Demo">
+  <meta name="description" content="Portfolio de Ramiro Gastón Nadalin — Desarrollador de Software especializado en Next.js, React, TypeScript y análisis estático de código. Bento Grid Minimalista & Soft Dark Mode.">
+  <meta name="keywords" content="Ramiro Gastón Nadalin, Ramiro Nadalin, Software Developer, Fullstack Developer, Next.js, React, TypeScript, Cartografo, Portfolio IT, Frontend Developer, Bento Grid, Minimalist, Soft Dark Mode">
   <meta name="author" content="Ramiro Gastón Nadalin">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0a0d14">
+  <meta name="theme-color" content="#0A0A0A">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
@@ -29,8 +29,8 @@
   <meta name="twitter:description" content="Desarrollador de software con foco en Next.js, TypeScript, demos interactivas en vivo y análisis estático.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
 
-  <!-- Favicon Vectorial con Glifo Tech -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='3' width='20' height='14' rx='2' ry='2'></rect><line x1='8' y1='21' x2='16' y2='21'></line><line x1='12' y1='17' x2='12' y2='21'></line><path d='M7 8l3 3-3 3'></path><path d='M13 14h4'></path></svg>">
+  <!-- Favicon Vectorial Monocromático Tech -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e4e4e7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='3' width='20' height='14' rx='2' ry='2'></rect><line x1='8' y1='21' x2='16' y2='21'></line><line x1='12' y1='17' x2='12' y2='21'></line><path d='M7 8l3 3-3 3'></path><path d='M13 14h4'></path></svg>">
 
   <!-- JSON-LD Datos Estructurados (Schema.org) -->
   <script type="application/ld+json">
@@ -77,16 +77,12 @@
           },
           colors: {
             brand: {
-              indigo: '#6366f1',
-              cyan: '#06b6d4',
-              violet: '#8b5cf6',
-              emerald: '#10b981',
-              dark: '#0a0d14',
+              dark: '#0A0A0A',
             }
           },
           animation: {
             'float': 'float 6s ease-in-out infinite',
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
           },
           keyframes: {
@@ -100,86 +96,82 @@
     }
   </script>
 
-  <!-- Estilos Glassmorphism Puro & Scrollbar Personalizada -->
+  <!-- Estilos Glassmorphism Sobrio & Minimalismo Soft Dark Mode -->
   <style>
     :root {
       color-scheme: dark;
     }
 
     body {
-      background-color: #0a0d14;
-      color: #f8fafc;
+      background-color: #0A0A0A;
+      color: #e4e4e7;
       font-family: 'Outfit', system-ui, sans-serif;
       overflow-x: hidden;
     }
 
     ::selection {
-      background: rgba(99, 102, 241, 0.35);
-      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fafafa;
     }
 
-    /* Scrollbar Futurista */
+    /* Scrollbar Minimalista Monocromática */
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #0a0d14;
+      background: #0A0A0A;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1e293b;
+      background: #27272a;
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #6366f1;
+      background: #3f3f46;
     }
 
-    /* Glassmorphic Bento Card */
+    /* Glassmorphic Bento Card Refinado (Soft Dark Mode) */
     .glass-card {
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(24, 24, 27, 0.45);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.04);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
     }
 
     .glass-card:hover {
-      border-color: rgba(99, 102, 241, 0.45);
-      box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.16);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
       transform: translateY(-2px);
     }
 
-    /* Gradient Text Utilities */
+    /* Gradient Text Utilities Monocromáticas & Suaves */
     .text-gradient-primary {
-      background: linear-gradient(135deg, #ffffff 20%, #818cf8 60%, #06b6d4 100%);
+      background: linear-gradient(135deg, #f4f4f5 25%, #d4d4d8 60%, #a1a1aa 100%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    .text-gradient-cyan {
-      background: linear-gradient(135deg, #a5f3fc 0%, #06b6d4 100%);
+    .text-gradient-subtle {
+      background: linear-gradient(135deg, #e4e4e7 0%, #a1a1aa 100%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    .text-gradient-indigo {
-      background: linear-gradient(135deg, #c7d2fe 0%, #6366f1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    /* Tech Pill Badge */
+    /* Tech Pill Badge Monocromático y Sobrio */
     .tech-pill {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72rem;
-      padding: 0.2rem 0.65rem;
+      padding: 0.25rem 0.7rem;
       border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #94a3b8;
+      color: #a1a1aa;
       transition: all 0.25s ease;
       display: inline-flex;
       align-items: center;
@@ -187,17 +179,17 @@
     }
 
     .tech-pill:hover {
-      background: rgba(99, 102, 241, 0.15);
-      border-color: rgba(99, 102, 241, 0.4);
-      color: #ffffff;
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: #f4f4f5;
       transform: translateY(-1px);
     }
 
-    /* Ambient Glow Orbs */
+    /* Ambient Glow Orbs Monocromáticos Suaves */
     .glow-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(100px);
+      filter: blur(120px);
       pointer-events: none;
       z-index: 0;
     }
@@ -220,7 +212,7 @@
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s;
     }
     #live-modal.modal-hidden #modal-container {
-      transform: scale(0.95) translateY(15px);
+      transform: scale(0.96) translateY(12px);
       opacity: 0;
     }
     #live-modal.modal-visible #modal-container {
@@ -230,18 +222,18 @@
   </style>
 </head>
 
-<body class="min-h-screen relative flex flex-col justify-between selection:bg-indigo-500/30 selection:text-cyan-300">
+<body class="min-h-screen relative flex flex-col justify-between selection:bg-zinc-800 selection:text-zinc-100 bg-[#0A0A0A]">
 
   <!-- ========================================================================= -->
-  <!-- GLOW ORBS & RADIAL BACKGROUND EN MODO OSCURO                              -->
+  <!-- GLOW ORBS & RADIAL BACKGROUND SUAVE (SOFT DARK MODE)                       -->
   <!-- ========================================================================= -->
   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-    <div class="glow-orb top-[-10%] left-[-5%] w-[500px] h-[500px] bg-indigo-600/15 animate-pulse-slow"></div>
-    <div class="glow-orb top-[30%] right-[-10%] w-[600px] h-[600px] bg-cyan-600/12 animate-float"></div>
-    <div class="glow-orb bottom-[-10%] left-[20%] w-[550px] h-[550px] bg-violet-600/10"></div>
+    <div class="glow-orb top-[-10%] left-[-5%] w-[500px] h-[500px] bg-zinc-800/15 animate-pulse-slow"></div>
+    <div class="glow-orb top-[30%] right-[-10%] w-[600px] h-[600px] bg-zinc-700/10 animate-float"></div>
+    <div class="glow-orb bottom-[-10%] left-[20%] w-[550px] h-[550px] bg-zinc-800/15"></div>
     
-    <!-- Grilla Sutil de Líneas -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+    <!-- Grilla Sutil de Líneas Monocromática -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
   </div>
 
   <!-- ========================================================================= -->
@@ -250,41 +242,41 @@
   <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none" aria-live="polite"></div>
 
   <!-- ========================================================================= -->
-  <!-- HEADER / NAVBAR EN GLASSMORPHISM                                         -->
+  <!-- HEADER / NAVBAR EN GLASSMORPHISM SOBRIO                                   -->
   <!-- ========================================================================= -->
-  <header class="sticky top-4 z-40 max-w-7xl mx-auto px-4 sm:px-6 w-full">
-    <div class="glass-card !rounded-2xl px-4 sm:px-6 py-3.5 flex items-center justify-between border-white/10 shadow-2xl">
+  <header class="sticky top-6 z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="glass-card !rounded-2xl px-5 sm:px-7 py-4 flex items-center justify-between border-white/10 shadow-2xl">
       
       <!-- Brand Logo & Identity -->
-      <a href="#hero-card" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-xl p-1">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500/20 via-cyan-500/10 to-transparent border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-mono font-bold text-sm shadow-[0_0_15px_rgba(99,102,241,0.25)] group-hover:border-indigo-400 group-hover:scale-105 transition-all">
+      <a href="#hero-card" class="flex items-center gap-3.5 group focus:outline-none focus:ring-1 focus:ring-zinc-500 rounded-xl p-1">
+        <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-700/80 flex items-center justify-center text-zinc-300 font-mono font-bold text-sm shadow-sm group-hover:border-zinc-500 group-hover:text-white group-hover:scale-105 transition-all">
           <span>&lt;RN/&gt;</span>
         </div>
         <div class="flex flex-col">
-          <span class="font-bold text-sm text-white tracking-wide group-hover:text-indigo-300 transition-colors">Ramiro Nadalin</span>
-          <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-emerald-400 font-medium">Software Developer</span>
+          <span class="font-bold text-sm text-zinc-200 tracking-wide group-hover:text-white transition-colors">Ramiro Nadalin</span>
+          <span class="font-mono text-[11px] text-zinc-400 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400/80"></span>
+            <span class="text-zinc-400 font-medium">Software Developer</span>
           </span>
         </div>
       </a>
 
       <!-- Navigation Chips (Desktop) -->
-      <nav class="hidden md:flex items-center gap-1.5 bg-black/40 p-1.5 rounded-xl border border-white/5 font-mono text-xs text-slate-300" aria-label="Navegación principal">
-        <a href="#hero-card" class="px-3 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-all">_inicio</a>
-        <a href="#cartografo-card" class="px-3 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-all flex items-center gap-1.5">
-          <span>_demos_en_vivo</span>
-          <span class="text-[9px] px-1.5 py-0.2 bg-indigo-500/20 text-indigo-300 rounded font-semibold border border-indigo-500/30">Live</span>
+      <nav class="hidden md:flex items-center gap-2 bg-zinc-900/60 p-1.5 rounded-xl border border-white/5 font-mono text-xs text-zinc-400" aria-label="Navegación principal">
+        <a href="#hero-card" class="px-3.5 py-1.5 rounded-lg hover:text-zinc-200 hover:bg-white/5 transition-all">_inicio</a>
+        <a href="#cartografo-card" class="px-3.5 py-1.5 rounded-lg hover:text-zinc-200 hover:bg-white/5 transition-all flex items-center gap-1.5">
+          <span>_proyectos</span>
+          <span class="text-[9px] px-1.5 py-0.5 bg-zinc-800 text-zinc-300 rounded font-semibold border border-zinc-700">Destacados</span>
         </a>
-        <a href="#tech-card" class="px-3 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-all">_stack</a>
-        <a href="#about-card" class="px-3 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-all">_enfoque</a>
-        <a href="#contact-card" class="px-3 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-all">_contacto</a>
+        <a href="#tech-card" class="px-3.5 py-1.5 rounded-lg hover:text-zinc-200 hover:bg-white/5 transition-all">_stack</a>
+        <a href="#about-card" class="px-3.5 py-1.5 rounded-lg hover:text-zinc-200 hover:bg-white/5 transition-all">_enfoque</a>
+        <a href="#contact-card" class="px-3.5 py-1.5 rounded-lg hover:text-zinc-200 hover:bg-white/5 transition-all">_contacto</a>
       </nav>
 
-      <!-- Action: Direct CV Download Button in Glassmorphism -->
+      <!-- Action: Direct CV Download Button Sobrio -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" id="nav-cv-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500/25 via-indigo-600/20 to-cyan-500/25 hover:from-indigo-500/35 hover:to-cyan-500/35 border border-indigo-500/40 hover:border-indigo-400 text-indigo-200 hover:text-white text-xs font-mono font-semibold transition-all shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] hover:scale-[1.02] active:scale-[0.98]">
-          <svg class="w-3.5 h-3.5 text-cyan-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" id="nav-cv-btn" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-zinc-200 hover:text-white text-xs font-mono font-medium transition-all shadow-sm hover:scale-[1.02] active:scale-[0.98]">
+          <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
           </svg>
           <span>Descargar CV</span>
@@ -297,71 +289,71 @@
   <!-- ========================================================================= -->
   <!-- MAIN BENTO GRID DASHBOARD (MODULAR 4-COLUMNS DESKTOP LAYOUT)              -->
   <!-- ========================================================================= -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-10 w-full z-10 space-y-6 flex-grow">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 w-full z-10 space-y-8 flex-grow">
 
     <!-- BENTO GRID MASTER CONTAINER: 1 col (mobile), 2 cols (tablet), 4 cols (desktop) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 auto-rows-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-8 auto-rows-auto">
 
       <!-- ===================================================================== -->
       <!-- 1. TARJETA HERO / PRINCIPAL (2x2 en Desktop: lg:col-span-2 lg:row-span-2)-->
       <!-- ===================================================================== -->
-      <section id="hero-card" class="glass-card lg:col-span-2 lg:row-span-2 p-6 sm:p-8 rounded-3xl flex flex-col justify-between relative group border-indigo-500/20 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-indigo-950/30">
+      <section id="hero-card" class="glass-card lg:col-span-2 lg:row-span-2 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between relative group border-white/10 bg-zinc-900/40">
         
         <!-- Top Status & Realtime Clock -->
-        <div class="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-white/5">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-white/5">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-700/80 text-zinc-300 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-emerald-400/90 animate-ping"></span>
             <span>Disponible para Oportunidades IT</span>
           </div>
 
-          <!-- Reloj en vivo Argentina (UTC-3) -->
-          <div class="inline-flex items-center gap-2 text-xs font-mono text-slate-400 bg-black/40 px-3 py-1 rounded-full border border-white/5">
-            <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><polyline points="12 6 12 12 16 14" stroke-width="2"/></svg>
+          <!-- Reloj en vivo Argentina (UTC-3) Monocromático -->
+          <div class="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 bg-zinc-900/80 px-3.5 py-1.5 rounded-full border border-zinc-700/60">
+            <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><polyline points="12 6 12 12 16 14" stroke-width="2"/></svg>
             <span id="argentina-clock">ARG 00:00:00 UTC-3</span>
           </div>
         </div>
 
         <!-- Central Pitch & Identity -->
-        <div class="space-y-4 my-6">
+        <div class="space-y-6 my-8">
           <div class="inline-block">
-            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-800/40 px-3 py-1 rounded-lg">
+            <span class="font-mono text-xs font-medium uppercase tracking-wider text-zinc-300 bg-zinc-900/90 border border-zinc-700/80 px-3.5 py-1.5 rounded-lg">
               Software & Fullstack Developer
             </span>
           </div>
 
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-zinc-100 leading-[1.15]">
             Hola, soy <br/>
             <span class="text-gradient-primary">Ramiro Gastón Nadalin</span>
           </h1>
 
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            Desarrollo herramientas de software de alto impacto y aplicaciones web modernas aplicando principios de <strong class="text-indigo-400 font-medium">Cero Alucinaciones</strong>, análisis estático y arquitecturas escalables con <strong class="text-white font-medium">Next.js 16, React 19 y TypeScript</strong>.
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-normal max-w-xl">
+            Desarrollo herramientas de software de alto impacto y aplicaciones web modernas aplicando principios de <strong class="text-zinc-200 font-medium">Cero Alucinaciones</strong>, análisis estático y arquitecturas escalables con <strong class="text-zinc-200 font-medium">Next.js 16, React 19 y TypeScript</strong>.
           </p>
         </div>
 
         <!-- Bottom Actions: Download CV + Social + Copy Email -->
-        <div class="pt-5 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
+        <div class="pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
           <!-- CTA Action Row -->
-          <div class="flex flex-wrap items-center gap-3">
-            <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 text-white font-bold text-xs font-mono uppercase tracking-wider transition-all duration-200 flex items-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:scale-[1.02] active:scale-[0.98]">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="flex flex-wrap items-center gap-3.5">
+            <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" class="px-5 py-3 rounded-xl bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 hover:border-zinc-600 text-zinc-100 hover:text-white font-medium text-xs font-mono uppercase tracking-wider transition-all duration-200 flex items-center gap-2 shadow-sm hover:scale-[1.02] active:scale-[0.98]">
+              <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
               </svg>
               <span>Descargar CV (PDF)</span>
             </a>
 
-            <button onclick="copyEmailToClipboard('ramironadalin8@gmail.com')" class="px-3.5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/40 text-slate-200 hover:text-white font-mono text-xs transition-all inline-flex items-center gap-2 group/btn" id="hero-copy-btn">
-              <svg class="w-3.5 h-3.5 text-cyan-400 group-hover/btn:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke-width="2"></path></svg>
+            <button onclick="copyEmailToClipboard('ramironadalin8@gmail.com')" class="px-4 py-3 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-700/80 hover:border-zinc-600 text-zinc-300 hover:text-zinc-100 font-mono text-xs transition-all inline-flex items-center gap-2 group/btn" id="hero-copy-btn">
+              <svg class="w-3.5 h-3.5 text-zinc-400 group-hover/btn:text-zinc-200 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke-width="2"></path></svg>
               <span>Copiar Email</span>
             </button>
           </div>
 
-          <!-- Social Quick Links -->
-          <div class="flex items-center gap-2">
-            <a href="https://github.com/Ramironadalin" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-black/40 border border-white/10 hover:border-indigo-500/40 text-slate-300 hover:text-white transition-colors" title="GitHub de Ramiro Nadalin" aria-label="Perfil de GitHub">
+          <!-- Social Quick Links Monocromáticos -->
+          <div class="flex items-center gap-2.5">
+            <a href="https://github.com/Ramironadalin" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-600 text-zinc-400 hover:text-zinc-200 transition-colors" title="GitHub de Ramiro Nadalin" aria-label="Perfil de GitHub">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/ramiro-gaston-nadalin-0a05a7430" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-black/40 border border-white/10 hover:border-indigo-500/40 text-slate-300 hover:text-white transition-colors" title="LinkedIn de Ramiro Nadalin" aria-label="Perfil de LinkedIn">
+            <a href="https://www.linkedin.com/in/ramiro-gaston-nadalin-0a05a7430" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-600 text-zinc-400 hover:text-zinc-200 transition-colors" title="LinkedIn de Ramiro Nadalin" aria-label="Perfil de LinkedIn">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
             </a>
           </div>
@@ -371,30 +363,30 @@
       <!-- ===================================================================== -->
       <!-- 2. TARJETA TECH STACK (2x2 en Desktop: lg:col-span-2 lg:row-span-2)   -->
       <!-- ===================================================================== -->
-      <section id="tech-card" class="glass-card lg:col-span-2 lg:row-span-2 p-6 sm:p-7 rounded-3xl flex flex-col justify-between">
+      <section id="tech-card" class="glass-card lg:col-span-2 lg:row-span-2 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between border-white/10 bg-zinc-900/40">
         <div>
           <!-- Header & Interactive Category Filter -->
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="font-mono text-xs uppercase tracking-wider text-indigo-400 font-semibold flex items-center gap-2">
-              <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <div class="flex items-center justify-between mb-6 pb-2">
+            <h2 class="font-mono text-xs uppercase tracking-wider text-zinc-300 font-semibold flex items-center gap-2">
+              <svg class="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
               <span>Tech Stack & Habilidades</span>
             </h2>
             
-            <!-- Category Tabs -->
-            <div class="flex items-center gap-1 bg-black/40 p-1 rounded-xl border border-white/5 text-[10px] font-mono">
-              <button onclick="filterTech('all')" id="filter-all" class="tech-filter-btn active px-2 py-0.5 rounded-lg bg-indigo-500/20 text-indigo-300 font-semibold border border-indigo-500/30 transition-all">Todos</button>
-              <button onclick="filterTech('frontend')" id="filter-frontend" class="tech-filter-btn px-2 py-0.5 rounded-lg text-slate-400 hover:text-white transition-all">Frontend</button>
-              <button onclick="filterTech('backend')" id="filter-backend" class="tech-filter-btn px-2 py-0.5 rounded-lg text-slate-400 hover:text-white transition-all">Backend/DB</button>
-              <button onclick="filterTech('devops')" id="filter-devops" class="tech-filter-btn px-2 py-0.5 rounded-lg text-slate-400 hover:text-white transition-all">DevOps</button>
+            <!-- Category Tabs Sobrios -->
+            <div class="flex items-center gap-1.5 bg-zinc-900/70 p-1.5 rounded-xl border border-white/5 text-[11px] font-mono">
+              <button onclick="filterTech('all')" id="filter-all" class="tech-filter-btn active px-2.5 py-1 rounded-lg bg-zinc-800 text-zinc-200 font-semibold border border-zinc-600 transition-all">Todos</button>
+              <button onclick="filterTech('frontend')" id="filter-frontend" class="tech-filter-btn px-2.5 py-1 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-white/5 transition-all">Frontend</button>
+              <button onclick="filterTech('backend')" id="filter-backend" class="tech-filter-btn px-2.5 py-1 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-white/5 transition-all">Backend/DB</button>
+              <button onclick="filterTech('devops')" id="filter-devops" class="tech-filter-btn px-2.5 py-1 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-white/5 transition-all">DevOps</button>
             </div>
           </div>
 
-          <!-- Badges Matrix Divided by Categories -->
-          <div class="space-y-3.5" id="tech-container">
+          <!-- Badges Matrix Divided by Categories (Monocromático) -->
+          <div class="space-y-5 my-2" id="tech-container">
             <!-- Frontend Group -->
             <div class="tech-group" data-category="frontend">
-              <span class="text-[10px] font-mono text-indigo-400 uppercase tracking-wider block mb-1.5 font-semibold">⚡ Frontend Moderno</span>
-              <div class="flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono text-zinc-300 uppercase tracking-wider block mb-2.5 font-semibold">⚡ Frontend Moderno</span>
+              <div class="flex flex-wrap gap-2">
                 <span class="tech-pill tech-badge" data-group="frontend"><span>⚡</span> TypeScript</span>
                 <span class="tech-pill tech-badge" data-group="frontend"><span>▲</span> Next.js 16</span>
                 <span class="tech-pill tech-badge" data-group="frontend"><span>⚛️</span> React 19</span>
@@ -406,8 +398,8 @@
 
             <!-- Backend & Data Group -->
             <div class="tech-group" data-category="backend">
-              <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider block mb-1.5 font-semibold">🗄️ Backend, Lógica & Datos</span>
-              <div class="flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono text-zinc-300 uppercase tracking-wider block mb-2.5 font-semibold">🗄️ Backend, Lógica & Datos</span>
+              <div class="flex flex-wrap gap-2">
                 <span class="tech-pill tech-badge" data-group="backend"><span>🐍</span> Python 3</span>
                 <span class="tech-pill tech-badge" data-group="backend"><span>🗄️</span> SQL & Modelado ERD</span>
                 <span class="tech-pill tech-badge" data-group="backend"><span>🔍</span> Análisis Estático (AST)</span>
@@ -417,8 +409,8 @@
 
             <!-- DevOps & QA Group -->
             <div class="tech-group" data-category="devops">
-              <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider block mb-1.5 font-semibold">🚀 DevOps, CI/CD & Testing</span>
-              <div class="flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono text-zinc-300 uppercase tracking-wider block mb-2.5 font-semibold">🚀 DevOps, CI/CD & Testing</span>
+              <div class="flex flex-wrap gap-2">
                 <span class="tech-pill tech-badge" data-group="devops"><span>🐙</span> Git & GitHub Flow</span>
                 <span class="tech-pill tech-badge" data-group="devops"><span>🚀</span> GitHub Actions (CI/CD)</span>
                 <span class="tech-pill tech-badge" data-group="devops"><span>🎭</span> Playwright E2E</span>
@@ -428,81 +420,149 @@
           </div>
         </div>
 
-        <div class="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+        <div class="mt-6 pt-5 border-t border-white/5 flex items-center justify-between text-xs font-mono text-slate-400">
           <span>Clean Architecture & Modularidad</span>
-          <span class="text-cyan-400 font-medium flex items-center gap-1">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 100% Strict Type-Safety
+          <span class="text-zinc-300 font-medium flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400/80"></span> 100% Strict Type-Safety
           </span>
         </div>
       </section>
 
       <!-- ===================================================================== -->
-      <!-- 3. PROYECTO 1: CARTÓGRAFO — CON LIVE DEMO (2x2 en Desktop)            -->
+      <!-- 3. PROYECTO 1: CARTÓGRAFO — REPOSITORIO GITHUB (2x2 en Desktop)        -->
       <!-- ===================================================================== -->
-      <article id="cartografo-card" class="glass-card lg:col-span-2 lg:row-span-2 p-6 sm:p-7 rounded-3xl flex flex-col justify-between group border-indigo-500/30 bg-gradient-to-br from-slate-900/90 via-slate-900/60 to-indigo-950/40">
+      <article id="cartografo-card" class="glass-card md:col-span-2 lg:col-span-2 md:row-span-2 lg:row-span-2 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between group border-white/10 bg-zinc-900/40">
         <!-- Top Meta -->
         <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
+          <div class="flex items-center justify-between mb-5">
+            <span class="px-3 py-1 rounded-md bg-zinc-800/80 border border-zinc-700 text-zinc-300 font-mono text-xs font-medium uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-zinc-400"></span>
               <span>⭐ Flagship • Hackathon IA & Software</span>
             </span>
-            <span class="text-[10px] font-mono text-cyan-300 bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-800/40">Client-Side AST</span>
+            <span class="text-xs font-mono text-zinc-400 bg-zinc-800/60 px-2.5 py-1 rounded border border-zinc-700/60">Client-Side AST</span>
           </div>
 
-          <div class="space-y-3">
-            <div class="flex items-center gap-3">
+          <div class="space-y-5 my-2">
+            <div class="flex items-center gap-3.5">
               <span class="text-3xl">🗺️</span>
               <div>
-                <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+                <h3 class="text-xl sm:text-2xl font-bold text-zinc-200 group-hover:text-white transition-colors">
                   Cartógrafo
                 </h3>
-                <p class="text-xs font-mono text-slate-400">Plataforma de Cartografía Viva & Onboarding para Sistemas Legacy</p>
+                <p class="text-xs font-mono text-zinc-400 mt-0.5">Plataforma de Cartografía Viva & Onboarding para Sistemas Legacy</p>
               </div>
             </div>
 
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Plataforma desarrollada para revolucionar el onboarding en repositorios complejos. Ingesta código vía GitHub o ZIP en el navegador con <strong class="text-white">JSZip</strong>, generando árboles de arquitectura, diagramas ERD y rutas guiadas bajo el paradigma de <strong class="text-indigo-400">Cero Alucinaciones</strong>.
+            <p class="text-sm text-slate-400 leading-relaxed font-normal">
+              Plataforma de software creada para optimizar el onboarding en repositorios complejos. Ingesta código vía GitHub o ZIP en el navegador con <strong class="text-zinc-200 font-medium">JSZip</strong>, generando árboles de arquitectura, diagramas ERD y rutas guiadas bajo el principio de <strong class="text-zinc-200 font-medium">Cero Alucinaciones</strong>.
             </p>
 
-            <!-- Metrics Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-2">
-              <div class="p-2.5 rounded-xl bg-black/40 border border-white/5">
-                <span class="text-[10px] font-mono text-slate-400 uppercase block">Análisis</span>
-                <span class="font-mono text-xs font-bold text-cyan-400">100% In-Browser AST</span>
+            <!-- Metrics Grid Sobria -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 pt-3">
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Análisis</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">100% In-Browser AST</span>
               </div>
-              <div class="p-2.5 rounded-xl bg-black/40 border border-white/5">
-                <span class="text-[10px] font-mono text-slate-400 uppercase block">Arquitectura</span>
-                <span class="font-mono text-xs font-bold text-indigo-400">Next.js 16 + React 19</span>
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Arquitectura</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">Next.js 16 + React 19</span>
               </div>
-              <div class="p-2.5 rounded-xl bg-black/40 border border-white/5 col-span-2 sm:col-span-1">
-                <span class="text-[10px] font-mono text-slate-400 uppercase block">Privacidad</span>
-                <span class="font-mono text-xs font-bold text-emerald-400">Zero Code Leaks</span>
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800 col-span-2 sm:col-span-1">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Privacidad</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">Zero Code Leaks</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Footer Pills & Dual Action (Probar en Vivo + GitHub) -->
-        <div class="pt-4 mt-4 border-t border-white/5 space-y-3">
-          <div class="flex flex-wrap gap-1">
-            <span class="tech-pill text-indigo-300 border-indigo-500/20">Next.js 16</span>
-            <span class="tech-pill text-indigo-300 border-indigo-500/20">TypeScript</span>
-            <span class="tech-pill text-indigo-300 border-indigo-500/20">React 19</span>
+        <!-- Footer Pills & Action (GitHub) -->
+        <div class="pt-6 mt-6 border-t border-white/5 space-y-4">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="tech-pill">Next.js 16</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">React 19</span>
             <span class="tech-pill">JSZip</span>
             <span class="tech-pill">Tailwind CSS</span>
           </div>
 
-          <div class="flex flex-wrap items-center justify-between gap-2.5 pt-1">
-            <!-- Botón Probar en Vivo (Abre Modal Interactivo) -->
-            <button onclick="openLiveDemo('Cartógrafo — Sistema de Cartografía Viva', 'https://github.com/Ramironadalin/Cartografo', 'cartografo')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 text-white font-bold text-xs font-mono uppercase tracking-wider transition-all duration-200 flex items-center gap-2 shadow-[0_0_15px_rgba(99,102,241,0.3)] hover:scale-[1.02] active:scale-[0.98]">
-              <svg class="w-3.5 h-3.5 text-cyan-300 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" stroke-width="2" fill="currentColor"/></svg>
-              <span>Probar en Vivo</span>
-            </button>
+          <div class="flex items-center justify-between gap-3 pt-2">
+            <!-- Botón Redirección al Repositorio de GitHub Sobrio -->
+            <a href="https://github.com/Ramironadalin/Cartografo" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 hover:border-zinc-600 text-xs font-mono font-medium text-zinc-200 hover:text-white inline-flex items-center gap-2 transition-all shadow-sm hover:scale-[1.02] active:scale-[0.98]">
+              <svg class="w-4 h-4 text-zinc-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>Ver Repositorio en GitHub ↗</span>
+            </a>
+            <span class="text-xs font-mono text-zinc-500 hidden sm:inline">Open Source</span>
+          </div>
+        </div>
+      </article>
 
-            <!-- Botón Ver en GitHub -->
-            <a href="https://github.com/Ramironadalin/Cartografo" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-indigo-500/40 text-xs font-mono text-slate-200 hover:text-white inline-flex items-center gap-1.5 transition-all">
-              <svg class="w-4 h-4 text-indigo-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      <!-- ===================================================================== -->
+      <!-- 4. PROYECTO 2: STUDIO ASPEN PILATES (2x2 en Desktop - Simétrico)       -->
+      <!-- ===================================================================== -->
+      <article id="aspen-card" class="glass-card md:col-span-2 lg:col-span-2 md:row-span-2 lg:row-span-2 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between group border-white/10 bg-zinc-900/40">
+        <!-- Top Meta -->
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <span class="px-3 py-1 rounded-md bg-zinc-800/80 border border-zinc-700 text-zinc-300 font-mono text-xs font-medium uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-zinc-400"></span>
+              <span>⭐ Producción • Web Comercial & Negocio</span>
+            </span>
+            <span class="text-xs font-mono text-zinc-400 bg-zinc-800/60 px-2.5 py-1 rounded border border-zinc-700/60">SEO Local & i18n</span>
+          </div>
+
+          <div class="space-y-5 my-2">
+            <div class="flex items-center gap-3.5">
+              <span class="text-3xl">🧘</span>
+              <div>
+                <h3 class="text-xl sm:text-2xl font-bold text-zinc-200 group-hover:text-white transition-colors">
+                  Studio Aspen Pilates
+                </h3>
+                <p class="text-xs font-mono text-zinc-400 mt-0.5">Plataforma Web Comercial, Sistema de Reservas & Presencia Digital</p>
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-400 leading-relaxed font-normal">
+              Plataforma web comercial desarrollada para potenciar la presencia digital y reservas de un estudio de pilates. Diseñada con enfoque <strong class="text-zinc-200 font-medium">Mobile First</strong>, arquitectura limpia, SEO local con <strong class="text-zinc-200 font-medium">Schema.org</strong>, soporte multi-idioma e integración directa con WhatsApp API.
+            </p>
+
+            <!-- Metrics Grid Sobria -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 pt-3">
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Rendimiento</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">100% Mobile First</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Posicionamiento</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">SEO & Schema.org</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800 col-span-2 sm:col-span-1">
+                <span class="text-[11px] font-mono text-zinc-400 uppercase block mb-1">Conversión</span>
+                <span class="font-mono text-xs font-bold text-zinc-200">WhatsApp API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Pills & Actions (Visitar Web + GitHub) -->
+        <div class="pt-6 mt-6 border-t border-white/5 space-y-4">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="tech-pill">HTML5 Semántico</span>
+            <span class="tech-pill">Vanilla CSS</span>
+            <span class="tech-pill">JavaScript ES6+</span>
+            <span class="tech-pill">Schema.org</span>
+            <span class="tech-pill">WhatsApp API</span>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <!-- Botón Directo Tradicional a la Web de Studio Aspen Sobrio -->
+            <a href="https://studioaspenpilates.com.ar/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 hover:border-zinc-600 text-zinc-100 hover:text-white font-medium text-xs font-mono uppercase tracking-wider transition-all duration-200 flex items-center gap-2 shadow-sm hover:scale-[1.02] active:scale-[0.98]">
+              <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              <span>Visitar Web</span>
+            </a>
+
+            <!-- Botón Código Fuente en GitHub Sobrio -->
+            <a href="https://github.com/Ramironadalin/studio-aspen-pilates" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-700/80 hover:border-zinc-600 text-xs font-mono text-zinc-300 hover:text-white inline-flex items-center gap-2 transition-all">
+              <svg class="w-4 h-4 text-zinc-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <span>GitHub ↗</span>
             </a>
           </div>
@@ -510,191 +570,137 @@
       </article>
 
       <!-- ===================================================================== -->
-      <!-- 4. TARJETA SOBRE MÍ & ENFOQUE TÉCNICO (2x1 en Desktop)                 -->
+      <!-- 5. TARJETA SOBRE MÍ & ENFOQUE TÉCNICO (2x1 en Desktop)                 -->
       <!-- ===================================================================== -->
-      <section id="about-card" class="glass-card lg:col-span-2 lg:row-span-1 p-6 rounded-3xl flex flex-col justify-between">
+      <section id="about-card" class="glass-card lg:col-span-2 lg:row-span-1 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between border-white/10 bg-zinc-900/40">
         <div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
-            <h2 class="font-mono text-xs uppercase tracking-wider text-cyan-400 font-semibold">Filosofía & Enfoque de Ingeniería</h2>
+          <div class="flex items-center gap-2.5 mb-4">
+            <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+            <h2 class="font-mono text-xs uppercase tracking-wider text-zinc-300 font-semibold">Filosofía & Enfoque de Ingeniería</h2>
           </div>
-          <h3 class="text-base sm:text-lg font-bold text-white mb-2">Resolución de problemas con rigor técnico</h3>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <h3 class="text-base sm:text-lg font-bold text-zinc-200 mb-4">Resolución de problemas con rigor técnico</h3>
+          <p class="text-sm text-slate-400 leading-relaxed font-normal">
             Priorizo la comprensión profunda de la arquitectura antes de escribir código. Creo en soluciones deterministas, herramientas de análisis estático que aceleren al equipo y aplicaciones web con tiempos de respuesta instantáneos.
           </p>
         </div>
 
-        <div class="mt-3 pt-3 border-t border-white/5 flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
-          <span class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Arquitecturas Limpias</span>
-          <span class="flex items-center gap-1.5"><span class="text-indigo-400">✓</span> Enfoque Determinista</span>
-          <span class="flex items-center gap-1.5"><span class="text-cyan-400">✓</span> Performance & A11y</span>
+        <div class="mt-6 pt-5 border-t border-white/5 flex flex-wrap items-center gap-5 text-xs font-mono text-slate-400">
+          <span class="flex items-center gap-2"><span class="text-zinc-300 font-bold">✓</span> Arquitecturas Limpias</span>
+          <span class="flex items-center gap-2"><span class="text-zinc-300 font-bold">✓</span> Enfoque Determinista</span>
+          <span class="flex items-center gap-2"><span class="text-zinc-300 font-bold">✓</span> Performance & A11y</span>
         </div>
       </section>
 
       <!-- ===================================================================== -->
-      <!-- 5. PROYECTO 2: STUDIO ASPEN PILATES (1x1 en Desktop)                  -->
+      <!-- 6. CONSOLA CLI / TERMINAL INTERACTIVA (2x1 en Desktop)                -->
       <!-- ===================================================================== -->
-      <article class="glass-card lg:col-span-1 lg:row-span-1 p-5 rounded-3xl flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Comercial & Live</span>
-            <span class="text-[10px] font-mono text-slate-400">Mobile First</span>
-          </div>
-          <h3 class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors flex items-center gap-1.5">
-            <span>🧘 Aspen Pilates</span>
-          </h3>
-          <p class="text-xs text-slate-300 mt-1 leading-relaxed line-clamp-2">
-            Sitio web comercial optimizado para conversión, velocidad de carga y navegación móvil fluida.
-          </p>
-        </div>
-
-        <div class="pt-3 mt-3 border-t border-white/5 flex items-center justify-between gap-1.5">
-          <button onclick="openLiveDemo('Studio Aspen Pilates — Web Comercial', 'https://ramironadalin.github.io/studio-aspen-pilates/', 'aspen')" class="px-2.5 py-1 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 text-[11px] font-mono transition-all">
-            Probar Demo
-          </button>
-          <a href="https://github.com/Ramironadalin/studio-aspen-pilates" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-slate-400 hover:text-white transition-colors">
-            GitHub ↗
-          </a>
-        </div>
-      </article>
-
-      <!-- ===================================================================== -->
-      <!-- 6. PROYECTO 3: PORTFOLIO BENTO OS (1x1 en Desktop)                    -->
-      <!-- ===================================================================== -->
-      <article class="glass-card lg:col-span-1 lg:row-span-1 p-5 rounded-3xl flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">Frontend Arch</span>
-            <span class="text-[10px] font-mono text-slate-400">Zero Dep</span>
-          </div>
-          <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
-            <span>💻 Bento OS</span>
-          </h3>
-          <p class="text-xs text-slate-300 mt-1 leading-relaxed line-clamp-2">
-            Dashboard interactivo modular con glassmorphism puro y sistema de modales para Live Demos.
-          </p>
-        </div>
-
-        <div class="pt-3 mt-3 border-t border-white/5 flex items-center justify-between gap-1.5">
-          <button onclick="openLiveDemo('Bento Portfolio OS — Vista Interactiva', 'https://ramironadalin.github.io/Portfolio/', 'portfolio')" class="px-2.5 py-1 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/30 text-[11px] font-mono transition-all">
-            Ver Sandbox
-          </button>
-          <a href="#hero-card" class="text-xs font-mono text-cyan-400 hover:underline">
-            Activo ↑
-          </a>
-        </div>
-      </article>
-
-      <!-- ===================================================================== -->
-      <!-- 7. CONSOLA CLI / TERMINAL INTERACTIVA (2x1 en Desktop)                -->
-      <!-- ===================================================================== -->
-      <section id="terminal-card" class="glass-card lg:col-span-2 lg:row-span-1 p-5 sm:p-6 rounded-3xl flex flex-col justify-between font-mono">
+      <section id="terminal-card" class="glass-card lg:col-span-2 lg:row-span-1 p-6 sm:p-8 md:p-9 rounded-3xl flex flex-col justify-between font-mono border-white/10 bg-zinc-900/40">
         <!-- Terminal Header -->
-        <div class="flex items-center justify-between pb-2.5 border-b border-white/10 text-xs">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs">
           <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
-            <span class="text-slate-400 ml-1">nadalin@bento-terminal: ~</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-zinc-600"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-zinc-500"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+            <span class="text-zinc-400 ml-1">nadalin@bento-terminal: ~</span>
           </div>
-          <span class="text-[10px] text-indigo-400 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-800/40">CLI Interactiva</span>
+          <span class="text-[10px] text-zinc-300 bg-zinc-800/80 px-2 py-0.5 rounded border border-zinc-700">CLI Interactiva</span>
         </div>
 
         <!-- Terminal Output -->
-        <div class="bg-black/60 p-3 rounded-xl my-2 text-[11px] font-mono border border-white/5 space-y-1.5 h-28 overflow-y-auto" id="terminal-screen" tabindex="0" role="region" aria-label="Terminal interactiva">
-          <div class="text-slate-400">Escribe o haz clic en un comando:</div>
-          <div class="text-indigo-300">Comandos: <span class="text-cyan-400">whoami</span>, <span class="text-cyan-400">projects</span>, <span class="text-cyan-400">cartografo</span>, <span class="text-cyan-400">stack</span>, <span class="text-cyan-400">demo</span>, <span class="text-cyan-400">contact</span>, <span class="text-cyan-400">clear</span></div>
-          <div id="terminal-history" class="space-y-1 pt-1"></div>
+        <div class="bg-black/70 p-4 rounded-xl my-4 text-xs font-mono border border-zinc-800 space-y-2 h-32 overflow-y-auto" id="terminal-screen" tabindex="0" role="region" aria-label="Terminal interactiva">
+          <div class="text-zinc-400">Escribe o haz clic en un comando:</div>
+          <div class="text-zinc-300">Comandos: <span class="text-zinc-100 underline decoration-zinc-600">whoami</span>, <span class="text-zinc-100 underline decoration-zinc-600">projects</span>, <span class="text-zinc-100 underline decoration-zinc-600">cartografo</span>, <span class="text-zinc-100 underline decoration-zinc-600">stack</span>, <span class="text-zinc-100 underline decoration-zinc-600">demo</span>, <span class="text-zinc-100 underline decoration-zinc-600">contact</span>, <span class="text-zinc-100 underline decoration-zinc-600">clear</span></div>
+          <div id="terminal-history" class="space-y-1.5 pt-1"></div>
         </div>
 
-        <!-- Quick Chips & Input -->
-        <div class="space-y-1.5">
-          <div class="flex flex-wrap gap-1 text-[10px]">
-            <button onclick="runCommand('whoami')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-indigo-500/20 text-slate-300 hover:text-indigo-300 border border-white/5">whoami</button>
-            <button onclick="runCommand('projects')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-indigo-500/20 text-slate-300 hover:text-indigo-300 border border-white/5">projects</button>
-            <button onclick="runCommand('demo')" class="px-2 py-0.5 rounded bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-semibold">demo</button>
-            <button onclick="runCommand('cartografo')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-indigo-500/20 text-slate-300 hover:text-indigo-300 border border-white/5">cartografo</button>
-            <button onclick="runCommand('stack')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-indigo-500/20 text-slate-300 hover:text-indigo-300 border border-white/5">stack</button>
-            <button onclick="runCommand('contact')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-indigo-500/20 text-slate-300 hover:text-indigo-300 border border-white/5">contact</button>
-            <button onclick="runCommand('clear')" class="px-2 py-0.5 rounded bg-white/5 hover:bg-red-500/20 text-slate-400 hover:text-red-300 border border-white/5">clear</button>
+        <!-- Quick Chips & Input Sobrios -->
+        <div class="space-y-3">
+          <div class="flex flex-wrap gap-1.5 text-[11px]">
+            <button onclick="runCommand('whoami')" class="px-2.5 py-1 rounded bg-zinc-800/60 hover:bg-zinc-700/60 text-zinc-300 hover:text-white border border-zinc-700/60 transition-all">whoami</button>
+            <button onclick="runCommand('projects')" class="px-2.5 py-1 rounded bg-zinc-800/60 hover:bg-zinc-700/60 text-zinc-300 hover:text-white border border-zinc-700/60 transition-all">projects</button>
+            <button onclick="runCommand('demo')" class="px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700 text-zinc-200 hover:text-white border border-zinc-600 font-semibold transition-all">demo</button>
+            <button onclick="runCommand('cartografo')" class="px-2.5 py-1 rounded bg-zinc-800/60 hover:bg-zinc-700/60 text-zinc-300 hover:text-white border border-zinc-700/60 transition-all">cartografo</button>
+            <button onclick="runCommand('stack')" class="px-2.5 py-1 rounded bg-zinc-800/60 hover:bg-zinc-700/60 text-zinc-300 hover:text-white border border-zinc-700/60 transition-all">stack</button>
+            <button onclick="runCommand('contact')" class="px-2.5 py-1 rounded bg-zinc-800/60 hover:bg-zinc-700/60 text-zinc-300 hover:text-white border border-zinc-700/60 transition-all">contact</button>
+            <button onclick="runCommand('clear')" class="px-2.5 py-1 rounded bg-zinc-800/40 hover:bg-zinc-700/50 text-zinc-400 hover:text-zinc-200 border border-zinc-800 transition-all">clear</button>
           </div>
 
-          <form onsubmit="handleCmdSubmit(event)" class="flex items-center gap-1.5 bg-black/80 px-2.5 py-1.5 rounded-xl border border-white/10 focus-within:border-indigo-500/50">
-            <span class="text-cyan-400 text-xs font-bold">❯</span>
-            <input type="text" id="terminal-input" placeholder="Escribe un comando..." autocomplete="off" class="w-full bg-transparent text-xs font-mono text-white placeholder-slate-500 focus:outline-none" aria-label="Entrada de terminal">
-            <button type="submit" class="text-[9px] uppercase px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 hover:bg-indigo-500 hover:text-white transition-colors">Ejecutar</button>
+          <form onsubmit="handleCmdSubmit(event)" class="flex items-center gap-2 bg-black/80 px-3.5 py-2.5 rounded-xl border border-zinc-800 focus-within:border-zinc-600">
+            <span class="text-zinc-400 text-xs font-bold">❯</span>
+            <input type="text" id="terminal-input" placeholder="Escribe un comando..." autocomplete="off" class="w-full bg-transparent text-xs font-mono text-zinc-200 placeholder-zinc-500 focus:outline-none" aria-label="Entrada de terminal">
+            <button type="submit" class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white border border-zinc-700 transition-colors">Ejecutar</button>
           </form>
         </div>
       </section>
 
       <!-- ===================================================================== -->
-      <!-- 8. EXPERIENCIA & FORMACIÓN ACADÉMICA (2x1 en Desktop)                 -->
+      <!-- 7. EXPERIENCIA & FORMACIÓN ACADÉMICA (2x1 en Desktop)                 -->
       <!-- ===================================================================== -->
-      <section class="glass-card lg:col-span-2 lg:row-span-1 p-6 rounded-3xl flex flex-col justify-between">
+      <section class="glass-card lg:col-span-2 lg:row-span-1 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between border-white/10 bg-zinc-900/40">
         <div>
-          <div class="flex items-center gap-2 mb-3">
-            <span class="w-2.5 h-2.5 rounded-full bg-violet-400"></span>
-            <h2 class="font-mono text-xs uppercase tracking-wider text-violet-400 font-semibold">Experiencia & Formación</h2>
+          <div class="flex items-center gap-2.5 mb-5">
+            <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+            <h2 class="font-mono text-xs uppercase tracking-wider text-zinc-300 font-semibold">Experiencia & Formación</h2>
           </div>
 
-          <div class="space-y-3">
-            <div class="p-3 rounded-2xl bg-black/40 border border-white/5 flex items-start justify-between gap-3">
+          <div class="space-y-4">
+            <div class="p-4 rounded-2xl bg-zinc-900/50 border border-zinc-800 flex items-start justify-between gap-4">
               <div>
-                <span class="text-[10px] font-mono text-indigo-400 uppercase block font-semibold">Educación Superior</span>
-                <h3 class="text-xs sm:text-sm font-bold text-white">Carrera Universitaria en Programación</h3>
-                <p class="text-[11px] text-slate-300 mt-0.5">Estructuras de datos, modelado relacional SQL y patrones de ingeniería de software.</p>
+                <span class="text-[10px] font-mono text-zinc-400 uppercase block font-semibold mb-1">Educación Superior</span>
+                <h3 class="text-sm font-bold text-zinc-200">Carrera Universitaria en Programación</h3>
+                <p class="text-xs text-slate-400 mt-1 leading-relaxed">Estructuras de datos, modelado relacional SQL y patrones de ingeniería de software.</p>
               </div>
-              <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5 border border-white/5 flex-shrink-0">En Curso</span>
+              <span class="text-[10px] font-mono text-zinc-400 px-2.5 py-1 rounded bg-zinc-800/60 border border-zinc-700/60 flex-shrink-0">En Curso</span>
             </div>
 
-            <div class="p-3 rounded-2xl bg-black/40 border border-white/5 flex items-start justify-between gap-3">
+            <div class="p-4 rounded-2xl bg-zinc-900/50 border border-zinc-800 flex items-start justify-between gap-4">
               <div>
-                <span class="text-[10px] font-mono text-emerald-400 uppercase block font-semibold">Hackathon de Software & IA</span>
-                <h3 class="text-xs sm:text-sm font-bold text-white">Co-Desarrollador de Cartógrafo</h3>
-                <p class="text-[11px] text-slate-300 mt-0.5">Desarrollo de análisis estático client-side y visualización de grafos de dependencias.</p>
+                <span class="text-[10px] font-mono text-zinc-400 uppercase block font-semibold mb-1">Hackathon de Software & IA</span>
+                <h3 class="text-sm font-bold text-zinc-200">Co-Desarrollador de Cartógrafo</h3>
+                <p class="text-xs text-slate-400 mt-1 leading-relaxed">Desarrollo de análisis estático client-side y visualización de grafos de dependencias.</p>
               </div>
-              <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5 border border-white/5 flex-shrink-0">Finalista</span>
+              <span class="text-[10px] font-mono text-zinc-400 px-2.5 py-1 rounded bg-zinc-800/60 border border-zinc-700/60 flex-shrink-0">Finalista</span>
             </div>
           </div>
         </div>
 
-        <div class="pt-3 mt-2 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+        <div class="pt-5 mt-6 border-t border-white/5 flex items-center justify-between text-xs font-mono text-slate-400">
           <span>Metodología: SOLID & DRY</span>
-          <span class="text-violet-400 font-medium">Arquitectura Limpia</span>
+          <span class="text-zinc-300 font-medium">Arquitectura Limpia</span>
         </div>
       </section>
 
       <!-- ===================================================================== -->
-      <!-- 9. CONTACTO RÁPIDO & REDES SOCIALES (2x1 en Desktop)                   -->
+      <!-- 8. CONTACTO RÁPIDO & REDES SOCIALES (2x1 en Desktop)                   -->
       <!-- ===================================================================== -->
-      <section id="contact-card" class="glass-card lg:col-span-2 lg:row-span-1 p-6 rounded-3xl flex flex-col justify-between border-cyan-500/20 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-cyan-950/30">
+      <section id="contact-card" class="glass-card lg:col-span-2 lg:row-span-1 p-7 sm:p-9 md:p-10 rounded-3xl flex flex-col justify-between border-white/10 bg-zinc-900/40">
         <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="px-2.5 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-[10px] font-bold uppercase tracking-wider">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-md bg-zinc-800/80 border border-zinc-700 text-zinc-300 font-mono text-[10px] font-semibold uppercase tracking-wider">
               Conexión Directa
             </span>
-            <span class="text-[10px] font-mono text-emerald-400">Respuesta Rápida</span>
+            <span class="text-xs font-mono text-zinc-400">Respuesta Rápida</span>
           </div>
 
-          <h2 class="text-lg font-bold text-white">¿Construimos el próximo proyecto?</h2>
-          <p class="text-xs text-slate-300 mt-1">Escríbeme directamente para oportunidades laborales o colaboraciones técnicas.</p>
+          <h2 class="text-xl font-bold text-zinc-100">¿Construimos el próximo proyecto?</h2>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">Escríbeme directamente para oportunidades laborales o colaboraciones técnicas.</p>
         </div>
 
-        <div class="pt-3 mt-3 border-t border-white/5 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
-          <div class="flex items-center justify-between bg-black/50 p-2.5 rounded-xl border border-white/10 flex-1">
-            <a href="mailto:ramironadalin8@gmail.com" class="text-xs font-mono font-bold text-white hover:text-cyan-400 transition-colors truncate">
+        <div class="pt-6 mt-6 border-t border-white/5 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+          <div class="flex items-center justify-between bg-black/60 px-4 py-3 rounded-xl border border-zinc-800 flex-1">
+            <a href="mailto:ramironadalin8@gmail.com" class="text-xs sm:text-sm font-mono font-bold text-zinc-200 hover:text-white transition-colors truncate">
               ramironadalin8@gmail.com
             </a>
-            <button onclick="copyEmailToClipboard('ramironadalin8@gmail.com')" class="ml-2 px-2.5 py-1 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/30 text-[11px] font-mono transition-all flex-shrink-0" id="contact-copy-btn">
+            <button onclick="copyEmailToClipboard('ramironadalin8@gmail.com')" class="ml-3 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-zinc-600 text-xs font-mono transition-all flex-shrink-0" id="contact-copy-btn">
               Copiar
             </button>
           </div>
 
-          <div class="flex items-center gap-2 flex-shrink-0">
-            <a href="https://www.linkedin.com/in/ramiro-gaston-nadalin-0a05a7430" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/40 text-xs font-mono text-slate-200 hover:text-white transition-all">
+          <div class="flex items-center gap-2.5 flex-shrink-0">
+            <a href="https://www.linkedin.com/in/ramiro-gaston-nadalin-0a05a7430" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-xs font-mono text-zinc-300 hover:text-white transition-all">
               LinkedIn ↗
             </a>
-            <a href="https://github.com/Ramironadalin" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/40 text-xs font-mono text-slate-200 hover:text-white transition-all">
+            <a href="https://github.com/Ramironadalin" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-xs font-mono text-zinc-300 hover:text-white transition-all">
               GitHub ↗
             </a>
           </div>
@@ -705,53 +711,53 @@
   </main>
 
   <!-- ========================================================================= -->
-  <!-- MODAL FLOTANTE INTERACTIVO DE LIVE PREVIEW (GLASSMORPHISM)                -->
+  <!-- MODAL FLOTANTE INTERACTIVO DE LIVE PREVIEW (GLASSMORPHISM SOBRIO)         -->
   <!-- ========================================================================= -->
-  <div id="live-modal" class="modal-hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+  <div id="live-modal" class="modal-hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
     
-    <!-- Modal Glass Container -->
-    <div id="modal-container" class="w-full max-w-5xl h-[88vh] bg-slate-900/90 border border-white/15 rounded-3xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-2xl">
+    <!-- Modal Glass Container Sobrio -->
+    <div id="modal-container" class="w-full max-w-5xl h-[88vh] bg-zinc-950/95 border border-zinc-800 rounded-3xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-2xl">
       
       <!-- Simulated Browser Bar Header -->
-      <div class="px-4 py-3 bg-black/60 border-b border-white/10 flex items-center justify-between gap-3 flex-shrink-0">
+      <div class="px-4 py-3 bg-zinc-900/90 border-b border-zinc-800 flex items-center justify-between gap-3 flex-shrink-0">
         
         <!-- Left: Traffic Light Window Dots + Title -->
         <div class="flex items-center gap-3">
           <div class="flex items-center gap-1.5">
-            <button onclick="closeLiveModal()" class="w-3 h-3 rounded-full bg-red-500/80 hover:bg-red-400 transition-colors focus:outline-none" title="Cerrar modal (Esc)"></button>
-            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+            <button onclick="closeLiveModal()" class="w-3 h-3 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors focus:outline-none" title="Cerrar modal (Esc)"></button>
+            <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
           </div>
-          <span id="modal-project-title" class="text-xs sm:text-sm font-bold text-white truncate max-w-[200px] sm:max-w-xs font-sans">
+          <span id="modal-project-title" class="text-xs sm:text-sm font-bold text-zinc-200 truncate max-w-[200px] sm:max-w-xs font-sans">
             Live Demo
           </span>
         </div>
 
         <!-- Center: Simulated URL Address Bar & Status -->
-        <div class="hidden md:flex items-center gap-2 bg-black/70 px-3 py-1.5 rounded-xl border border-white/10 text-xs font-mono text-slate-300 max-w-md w-full justify-between">
+        <div class="hidden md:flex items-center gap-2 bg-black/60 px-3 py-1.5 rounded-xl border border-zinc-800 text-xs font-mono text-zinc-400 max-w-md w-full justify-between">
           <div class="flex items-center gap-1.5 truncate">
-            <svg class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"></rect><path d="M7 11V7a5 5 0 0110 0v4" stroke-width="2"></path></svg>
-            <span id="modal-url-display" class="text-slate-300 truncate">https://...</span>
+            <svg class="w-3.5 h-3.5 text-zinc-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"></rect><path d="M7 11V7a5 5 0 0110 0v4" stroke-width="2"></path></svg>
+            <span id="modal-url-display" class="text-zinc-300 truncate">https://...</span>
           </div>
-          <span class="text-[10px] text-emerald-400 bg-emerald-950/60 px-1.5 py-0.2 rounded font-semibold border border-emerald-800/40">LIVE</span>
+          <span class="text-[10px] text-zinc-300 bg-zinc-800 px-1.5 py-0.5 rounded font-semibold border border-zinc-700">LIVE</span>
         </div>
 
         <!-- Right: Actions (New Tab, GitHub, Close) -->
         <div class="flex items-center gap-2">
           <!-- External Tab Link -->
-          <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 sm:px-2.5 sm:py-1 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-slate-300 hover:text-white transition-all flex items-center gap-1.5" title="Abrir en pestaña nueva">
+          <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 sm:px-2.5 sm:py-1 rounded-xl bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-mono text-zinc-300 hover:text-white transition-all flex items-center gap-1.5" title="Abrir en pestaña nueva">
             <span class="hidden sm:inline">Abrir Pestaña</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
 
           <!-- GitHub Source Link -->
-          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 sm:px-2.5 sm:py-1 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-slate-300 hover:text-white transition-all flex items-center gap-1.5" title="Ver código fuente en GitHub">
-            <svg class="w-3.5 h-3.5 text-indigo-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 sm:px-2.5 sm:py-1 rounded-xl bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-mono text-zinc-300 hover:text-white transition-all flex items-center gap-1.5" title="Ver código fuente en GitHub">
+            <svg class="w-3.5 h-3.5 text-zinc-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             <span class="hidden sm:inline">GitHub</span>
           </a>
 
           <!-- Close Modal Button -->
-          <button onclick="closeLiveModal()" class="p-1.5 rounded-xl bg-red-500/20 hover:bg-red-500/30 text-red-300 border border-red-500/30 transition-all flex items-center justify-center" aria-label="Cerrar ventana modal">
+          <button onclick="closeLiveModal()" class="p-1.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 border border-zinc-700 transition-all flex items-center justify-center" aria-label="Cerrar ventana modal">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
@@ -759,11 +765,11 @@
       </div>
 
       <!-- Modal Body: Iframe Container & Fallback Sandbox -->
-      <div class="relative flex-grow w-full bg-[#07090e] overflow-hidden flex items-center justify-center">
+      <div class="relative flex-grow w-full bg-[#0a0a0a] overflow-hidden flex items-center justify-center">
         
         <!-- Loading Spinner Indicator -->
-        <div id="modal-spinner" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-[#07090e] gap-3 text-slate-400 font-mono text-xs">
-          <div class="w-8 h-8 rounded-full border-2 border-indigo-500/20 border-t-indigo-400 animate-spin"></div>
+        <div id="modal-spinner" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-[#0a0a0a] gap-3 text-zinc-400 font-mono text-xs">
+          <div class="w-8 h-8 rounded-full border-2 border-zinc-700 border-t-zinc-300 animate-spin"></div>
           <span>Cargando aplicación en vivo...</span>
         </div>
 
@@ -771,25 +777,25 @@
         <iframe id="modal-iframe" src="" class="w-full h-full border-0 relative z-20" title="Vista previa interactiva del proyecto" onload="document.getElementById('modal-spinner').style.display='none'"></iframe>
 
         <!-- Simulated Fallback Panel (For AST / Terminal Visualizer) -->
-        <div id="modal-fallback" class="hidden absolute inset-0 z-20 p-6 sm:p-10 flex-col justify-between bg-slate-950 font-mono overflow-y-auto">
+        <div id="modal-fallback" class="hidden absolute inset-0 z-20 p-6 sm:p-10 flex-col justify-between bg-zinc-950 font-mono overflow-y-auto">
           <div class="space-y-4 max-w-3xl mx-auto w-full">
-            <div class="flex items-center gap-2 text-xs text-indigo-400 font-bold uppercase tracking-wider">
+            <div class="flex items-center gap-2 text-xs text-zinc-400 font-bold uppercase tracking-wider">
               <span>⚡ Modo Explorador & Sandbox Técnico</span>
             </div>
-            <h3 id="fallback-title" class="text-xl sm:text-2xl font-bold text-white font-sans"></h3>
-            <p id="fallback-desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed"></p>
+            <h3 id="fallback-title" class="text-xl sm:text-2xl font-bold text-zinc-200 font-sans"></h3>
+            <p id="fallback-desc" class="text-xs sm:text-sm text-zinc-400 leading-relaxed"></p>
             
-            <div class="p-4 rounded-2xl bg-black/60 border border-white/10 space-y-2 text-xs">
-              <div class="text-emerald-400 font-bold">Estado de Arquitectura:</div>
-              <div class="text-slate-300">• Ingesta y parseo AST procesado en cliente (Zero Hallucinations).</div>
-              <div class="text-slate-300">• Soporte de repositorios Git, archivos .ZIP y diagramas de componentes.</div>
-              <div class="text-slate-300">• Repositorio oficial con código fuente abierto y documentación completa.</div>
+            <div class="p-4 rounded-2xl bg-zinc-900 border border-zinc-800 space-y-2 text-xs">
+              <div class="text-zinc-200 font-bold">Estado de Arquitectura:</div>
+              <div class="text-zinc-400">• Ingesta y parseo AST procesado en cliente (Zero Hallucinations).</div>
+              <div class="text-zinc-400">• Soporte de repositorios Git, archivos .ZIP y diagramas de componentes.</div>
+              <div class="text-zinc-400">• Repositorio oficial con código fuente abierto y documentación completa.</div>
             </div>
           </div>
 
-          <div class="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 max-w-3xl mx-auto w-full">
-            <span class="text-xs text-slate-400">¿Quieres inspeccionar el código directamente?</span>
-            <a id="fallback-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-white font-bold text-xs font-mono transition-all">
+          <div class="pt-6 border-t border-zinc-800 flex flex-wrap items-center justify-between gap-4 max-w-3xl mx-auto w-full">
+            <span class="text-xs text-zinc-400">¿Quieres inspeccionar el código directamente?</span>
+            <a id="fallback-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-zinc-200 font-bold text-xs font-mono transition-all">
               Ver Repositorio en GitHub ↗
             </a>
           </div>
@@ -803,17 +809,17 @@
   <!-- ========================================================================= -->
   <!-- FOOTER                                                                    -->
   <!-- ========================================================================= -->
-  <footer class="max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full z-10 border-t border-white/5 mt-6">
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full z-10 border-t border-white/5 mt-10">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
       <div class="flex items-center gap-2">
-        <span class="text-indigo-400 font-bold">&lt;RN/&gt;</span>
+        <span class="text-zinc-300 font-bold">&lt;RN/&gt;</span>
         <span>Ramiro Gastón Nadalin • <span id="current-year">2026</span></span>
       </div>
 
-      <div class="flex items-center gap-4 text-slate-400">
-        <span>Bento Grid Glassmorphic Architecture • Live Demos</span>
+      <div class="flex items-center gap-4 text-zinc-500">
+        <span>Bento Grid Architecture • Minimalist Soft Dark Mode</span>
         <span>•</span>
-        <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" class="text-indigo-400 hover:underline">Descargar CV</a>
+        <a href="./CV.pdf" download="Ramiro_Gaston_Nadalin_CV.pdf" class="text-zinc-400 hover:text-zinc-200 hover:underline">Descargar CV</a>
       </div>
     </div>
   </footer>
@@ -839,13 +845,6 @@
         github: "https://github.com/Ramironadalin/studio-aspen-pilates",
         isIframeCapable: true,
         desc: "Sitio web comercial responsivo con foco en rendimiento, conversión y fluidez móvil."
-      },
-      portfolio: {
-        title: "Portfolio Bento OS — Live Architecture",
-        url: "https://ramironadalin.github.io/Portfolio/",
-        github: "https://github.com/Ramironadalin",
-        isIframeCapable: true,
-        desc: "Entorno de desarrollo Bento OS con estética Glassmorphism, consola CLI simulada y reproductor de demos."
       }
     };
 
@@ -922,16 +921,16 @@
     });
 
     // ==========================================
-    // 2. NOTIFICACIONES TOAST FLOTANTES
+    // 2. NOTIFICACIONES TOAST FLOTANTES SOBRIAS
     // ==========================================
     function showToast(message, isSuccess = true) {
       const container = document.getElementById('toast-container');
       if (!container) return;
 
       const toast = document.createElement('div');
-      toast.className = 'px-4 py-3 rounded-2xl bg-slate-900/95 border border-indigo-500/40 text-xs font-mono text-white shadow-2xl backdrop-blur-xl flex items-center gap-2 transform translate-y-4 opacity-0 transition-all duration-300 pointer-events-auto';
+      toast.className = 'px-4 py-3 rounded-2xl bg-zinc-900/95 border border-zinc-700 text-xs font-mono text-zinc-200 shadow-2xl backdrop-blur-xl flex items-center gap-2 transform translate-y-4 opacity-0 transition-all duration-300 pointer-events-auto';
       toast.innerHTML = `
-        <span class="w-2 h-2 rounded-full ${isSuccess ? 'bg-emerald-400' : 'bg-cyan-400'} animate-ping"></span>
+        <span class="w-2 h-2 rounded-full ${isSuccess ? 'bg-emerald-400/90' : 'bg-zinc-400'} animate-ping"></span>
         <span>${message}</span>
       `;
 
@@ -997,14 +996,14 @@
     // ==========================================
     function filterTech(category) {
       document.querySelectorAll('.tech-filter-btn').forEach(btn => {
-        btn.classList.remove('bg-indigo-500/20', 'text-indigo-300', 'font-semibold', 'border', 'border-indigo-500/30');
-        btn.classList.add('text-slate-400');
+        btn.classList.remove('bg-zinc-800', 'text-zinc-200', 'font-semibold', 'border', 'border-zinc-600');
+        btn.classList.add('text-zinc-400');
       });
 
       const current = document.getElementById(`filter-${category}`);
       if (current) {
-        current.classList.remove('text-slate-400');
-        current.classList.add('bg-indigo-500/20', 'text-indigo-300', 'font-semibold', 'border', 'border-indigo-500/30');
+        current.classList.remove('text-zinc-400');
+        current.classList.add('bg-zinc-800', 'text-zinc-200', 'font-semibold', 'border', 'border-zinc-600');
       }
 
       document.querySelectorAll('.tech-group').forEach(group => {
@@ -1021,13 +1020,13 @@
     // 6. MOTOR DE CONSOLA / TERMINAL INTERACTIVA
     // ==========================================
     const commands = {
-      whoami: `<p class="text-white font-bold">Ramiro Gastón Nadalin</p><p class="text-slate-300">Software Developer en formación y co-creador de Cartógrafo.</p>`,
-      projects: `<p class="text-cyan-300 font-bold">Proyectos con Live Demo:</p><p class="text-slate-300">1. Cartógrafo (Análisis AST en navegador)</p><p class="text-slate-300">2. Studio Aspen Pilates (Web Comercial)</p><p class="text-slate-300">3. Bento OS (Portfolio Glassmorphism)</p>`,
-      demo: `<p class="text-indigo-300 font-bold">Iniciando Live Demo de Cartógrafo...</p>`,
-      cartografo: `<p class="text-indigo-300 font-bold">🗺️ Cartógrafo:</p><p class="text-slate-300">Stack: Next.js 16, React 19, TypeScript, JSZip.</p><p class="text-slate-300">Repo: <a href="https://github.com/Ramironadalin/Cartografo" target="_blank" class="text-cyan-400 underline">github.com/Ramironadalin/Cartografo</a></p>`,
-      stack: `<p class="text-emerald-300 font-bold">⚡ Core Stack:</p><p class="text-slate-300">TypeScript, Next.js, React, Python 3, SQL, Tailwind CSS, Playwright, Git.</p>`,
-      contact: `<p class="text-cyan-300 font-bold">📬 Contacto:</p><p class="text-slate-300">Email: ramironadalin8@gmail.com</p><p class="text-slate-300">LinkedIn: in/ramiro-gaston-nadalin</p>`,
-      help: `<p class="text-slate-300">Comandos disponibles: whoami, projects, demo, cartografo, stack, contact, clear</p>`
+      whoami: `<p class="text-zinc-100 font-bold">Ramiro Gastón Nadalin</p><p class="text-zinc-400">Software Developer en formación y co-creador de Cartógrafo.</p>`,
+      projects: `<p class="text-zinc-200 font-bold">Proyectos Destacados:</p><p class="text-zinc-400">1. Cartógrafo (Análisis AST en navegador)</p><p class="text-zinc-400">2. Studio Aspen Pilates (Web Comercial & SEO)</p>`,
+      demo: `<p class="text-zinc-200 font-bold">Iniciando Live Demo de Cartógrafo...</p>`,
+      cartografo: `<p class="text-zinc-200 font-bold">🗺️ Cartógrafo:</p><p class="text-zinc-400">Stack: Next.js 16, React 19, TypeScript, JSZip.</p><p class="text-zinc-400">Repo: <a href="https://github.com/Ramironadalin/Cartografo" target="_blank" class="text-zinc-200 underline">github.com/Ramironadalin/Cartografo</a></p>`,
+      stack: `<p class="text-zinc-200 font-bold">⚡ Core Stack:</p><p class="text-zinc-400">TypeScript, Next.js, React, Python 3, SQL, Tailwind CSS, Playwright, Git.</p>`,
+      contact: `<p class="text-zinc-200 font-bold">📬 Contacto:</p><p class="text-zinc-400">Email: ramironadalin8@gmail.com</p><p class="text-zinc-400">LinkedIn: in/ramiro-gaston-nadalin</p>`,
+      help: `<p class="text-zinc-400">Comandos disponibles: whoami, projects, demo, cartografo, stack, contact, clear</p>`
     };
 
     function runCommand(cmd) {
@@ -1046,10 +1045,10 @@
       }
 
       const item = document.createElement('div');
-      item.className = 'border-l-2 border-indigo-500/50 pl-2 py-0.5 space-y-0.5';
+      item.className = 'border-l-2 border-zinc-600 pl-2 py-0.5 space-y-0.5';
       item.innerHTML = `
-        <div class="text-slate-400 text-[10px]"><span class="text-cyan-400">❯</span> <span class="text-white font-bold">${cmd}</span></div>
-        <div class="text-slate-300 text-[10px]">${commands[clean] || `<span class="text-red-400">Comando '${cmd}' desconocido. Escribe 'help'.</span>`}</div>
+        <div class="text-zinc-400 text-[10px]"><span class="text-zinc-400">❯</span> <span class="text-zinc-200 font-bold">${cmd}</span></div>
+        <div class="text-zinc-300 text-[10px]">${commands[clean] || `<span class="text-zinc-400">Comando '${cmd}' desconocido. Escribe 'help'.</span>`}</div>
       `;
       history.appendChild(item);
       screen.scrollTop = screen.scrollHeight;
