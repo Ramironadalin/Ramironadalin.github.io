@@ -677,12 +677,18 @@
       <!-- Action Row -->
       <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
         <div class="flex items-center justify-between bg-white px-5 py-3.5 rounded-xl border border-indigo-200 shadow-sm flex-1">
-          <a href="mailto:ramironadalin8@gmail.com" class="text-xs sm:text-sm font-mono font-bold text-slate-900 hover:text-indigo-600 transition-colors truncate">
-            ramironadalin8@gmail.com
+          <a href="mailto:ramironadalin8@gmail.com" class="text-xs sm:text-sm font-mono font-bold text-slate-900 hover:text-indigo-600 transition-colors truncate flex items-center gap-2">
+            <svg class="w-4 h-4 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span class="truncate">ramironadalin8@gmail.com</span>
           </a>
-          <button onclick="copyEmailToClipboard('ramironadalin8@gmail.com')" class="ml-3 px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs font-mono transition-all flex-shrink-0 shadow-sm shadow-indigo-500/20" id="contact-copy-btn">
-            Copiar
-          </button>
+          <a href="mailto:ramironadalin8@gmail.com" class="ml-3 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs font-mono transition-all flex-shrink-0 shadow-sm shadow-indigo-500/20 inline-flex items-center gap-1.5 hover:scale-[1.02] active:scale-[0.98]" id="contact-send-btn">
+            <span>Enviar Correo</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
         </div>
 
         <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -754,18 +760,11 @@
         showToast(`✓ Email copiado: ${email}`);
         
         const heroBtn = document.getElementById('hero-copy-btn');
-        const contactBtn = document.getElementById('contact-copy-btn');
 
         if (heroBtn) {
           const original = heroBtn.innerHTML;
           heroBtn.innerHTML = `<span>✓ ¡Copiado!</span>`;
           setTimeout(() => heroBtn.innerHTML = original, 2000);
-        }
-
-        if (contactBtn) {
-          const original = contactBtn.innerHTML;
-          contactBtn.innerHTML = `<span>¡Copiado!</span>`;
-          setTimeout(() => contactBtn.innerHTML = original, 2000);
         }
       }).catch(() => {
         showToast('Error al copiar el email', false);
